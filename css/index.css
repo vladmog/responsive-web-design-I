@@ -1,3 +1,349 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+body {
+  max-width: 960px;
+;
+  margin: auto;
+ 
+}
+
+nav {
+  display: flex;
+}
+
+
+nav a {
+  padding: 0px 0px 0px 50px;
+  color: gray;
+  text-decoration: none;
+}
+header a {
+  color: black;
+  text-decoration: none;
+}
+.logo {
+  padding-left: 120px;
+  
+}
+
+.whiteSpace {
+  height: 30px;
+  background-color: white;
+  margin: -15px;
+  z-index: 1
+ 
+}
+.stickyBar {
+  
+  align-items: baseline;
+  top: 0;
+  background: white;
+  height: 50px;
+  width: 90%
+  z-index: 500;
+  display: flex;
+  flex-direction: row-reverse;
+  
+}
+header {
+  margin-top: 50px;
+  width: 90%;
+  display: flex;
+}
+
+.headerText {
+  
+  
+  margin: 100px 5px 100px 5px;
+  width: 49%;
+  text-align: center;
+}
+.button {
+  border: solid gray 2px;
+  padding: 5px 30px 5px 30px;
+  
+  
+}
+h1 {
+  font-size: 75px;
+}
+
+
+.headerImage {
+  
+  width: 49%;
+  padding-top: 50px;
+}
+.body1 {
+  padding-bottom: 30px;
+  display: flex;
+}
+.body1Sub {
+  padding-left: 20px;
+}
+
+.middle-img {
+  
+  display: block;
+  margin: auto;
+  
+}
+.body2{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+}
+.body2Sub {
+ 
+ 
+  padding-left: 20px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer {
+  padding-left: 20px;
+}
+
+hr {
+  width: 95%;
+  margin: 30px 0px;
+}
+
+
+@media(max-width: 800px){
+.stickyBar {
+  flex-direction: column;
+  
+  
+ }
+  .logo {
+    padding: 10px 0px;
+    margin: auto;
+  }
+  
+  header {
+    width: 90%;
+    justify-content: center;
+  }
+  
+  .headerImage {
+    display: none;
+  }
+  
+  .middle-img {
+    width: 95%;
+    padding: initial;
+    display: block;
+    margin: auto;
+  }
+  
+  .bodyContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+}
+
+@media (max-width: 500px) {
+  .stickyBar {
+    align-items: flex-start;
+    justify-content: center;
+    height: 250px;
+    padding-top: 30px;
+  }
+  
+  .headerText {
+    margin: 20px 0px 60px;
+    text-align: ;
+  }
+  
+  nav a {
+    padding: 10px 0px;
+    /*background-color: black;*/
+    text-align: center;
+    border: solid black 1px;
+    border-style: solid none none none;
+  }
+  
+  .lastA {
+    border-style: solid none;
+  }
+  nav {
+  flex-direction: column;
+  padding: initial;
+  width: 100%;;
+  }
+  
+  .body1 {
+    flex-direction: column;
+  }
+  
+  .body1Sub {
+    padding: 20px 10px;
+    width: 90%
+  }
+  .body2 {
+    flex-direction: column;
+  }
+  
+  .body2Sub {
+    padding: 20px 10px;
+    width: 90%
+  }
+}
 
